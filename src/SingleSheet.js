@@ -10,6 +10,7 @@ const SingleSheet = (props) => (
           <th>id</th>
           <th>name</th>
           <th>email</th>
+          <th>image</th>
         </tr>
       </thead>
       <tbody>
@@ -18,6 +19,13 @@ const SingleSheet = (props) => (
             <td>{data.id}</td>
             <td>{data.name}</td>
             <td>{data.email}</td>
+            <td>
+              <img
+                src={data.image}
+                alt={data.name}
+                style={{ maxWidth: "300px", maxHeight: "300px" }}
+              />
+            </td>
           </tr>
         ))}
       </tbody>
