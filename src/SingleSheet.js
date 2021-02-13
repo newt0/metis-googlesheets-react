@@ -1,15 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-
-/**
- *
- * the below is for running the example in the context of this repo.
- *
- * for your app, use:
- *
- * import { withGoogleSheets } from 'react-db-google-sheets';
- *
- */
 import { withGoogleSheets } from "react-db-google-sheets";
 
 const SingleSheet = (props) => (
